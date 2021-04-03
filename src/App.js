@@ -1,9 +1,10 @@
 import React from 'react'
+import Map from "./components/Map";
 
 const App = ()=>{
   return (
     <div className="App">
-      <h1>some str</h1>
+        <Map/>
     </div>
   );
 }
