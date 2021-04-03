@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import Map from "./components/Map";
-
+import Loader from "./components/Loader"
 
 const App = ()=>{
     
@@ -23,9 +23,9 @@ const App = ()=>{
     
   return (
     <div className="App">
-        <Map/>
+        {!loading ? <Map eventData = {eventData}/> : <Loader/>}
     </div>
   );
-}
+};
 
 export default App;
